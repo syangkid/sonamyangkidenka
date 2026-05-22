@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact | Druk Design Studio</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <nav class="nav">
+    <a href="index.html" class="nav__logo">Druk<span>Design</span> Studio</a>
+    <div class="nav__links" id="navLinks">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="portfolio.html">Portfolio</a>
+      <a href="projects.html">Projects</a>
+      <a href="contact.html" class="active">Contact</a>
+    </div>
+    <button class="nav__hamburger" id="hamburger" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+  
+  <div class="page-wrapper">
+    <section class="contact-section">
+      <div class="contact-intro">
+        <p class="eyebrow">Let's Connect</p>
+        <h1 class="section-title">Contact <em>Me</em></h1>
+      </div>
+      <div class="contact-wrapper">
+        <div class="contact-info">
+          <h3>Email</h3>
+          <p>drukdesignstudio@gmail.com</p>
+          <h3>Phone</h3>
+          <p>+975 17123456</p>
+          <h3>Location</h3>
+          <p>Thimphu, Bhutan</p>
+        </div>
+        <form class="contact-form" action="#">
+          <input type="text" placeholder="Your Name" required>
+          <input type="email" placeholder="Your Email" required>
+          <textarea rows="6" placeholder="Your Message"></textarea>
+          <button class="btn btn-primary">Send Message</button>
+        </form>
+      </div>
+    </section>
+  </div>
+  <footer>
+    <p>© 2025 Druk Design Studio · Bhutan</p>
+  </footer>
+  <script>
+  document.getElementById('hamburger').addEventListener('click', () => {
+    document.getElementById('navLinks').classList.toggle('open');
+  });
+</script>
+</body>
+</html>

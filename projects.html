@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Projects | Druk Design Studio</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<nav class="nav">
+  <a href="index.html" class="nav__logo">Druk<span>Design</span> Studio</a>
+  <div class="nav__links" id="navLinks">
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="portfolio.html">Portfolio</a>
+    <a href="projects.html" class="active">Projects</a>
+    <a href="contact.html">Contact</a>
+  </div>
+  <button class="nav__hamburger" id="hamburger" aria-label="Menu">
+      <span></span><span></span><span></span>
+  </button>
+</nav>
+
+<div class="page-wrapper">
+
+<section class="projects-section">
+
+  <div class="projects-header">
+    <p class="eyebrow">Recent Work</p>
+    <h1 class="section-title">My <em>Projects</em></h1>
+  </div>
+
+  <div class="projects-container">
+
+    <div class="project-card">
+      <img src="./images/Project 1.png" alt="Project 1">
+      <h3>Tourism Website</h3>
+      <p>Responsive tourism website for local Bhutan travel agency.</p>
+    </div>
+
+    <div class="project-card">
+      <img src="./images/Project 2.png" alt="Project 2">
+      <h3>Brand Identity</h3>
+      <p>Minimal branding package for artisan coffee business.</p>
+    </div>
+
+    <div class="project-card">
+      <img src="./images/Project 3.png" alt="Project 3">
+      <h3>Festival Poster</h3>
+      <p>Traditional Bhutanese festival poster design collection.</p>
+    </div>
+
+  </div>
+
+</section>
+
+</div>
+
+<footer>
+  <p>© 2025 Druk Design Studio · Bhutan</p>
+</footer>
+<script>
+  document.getElementById('hamburger').addEventListener('click', () => {
+    document.getElementById('navLinks').classList.toggle('open');
+  });
+</script>
+</body>
+</html>
